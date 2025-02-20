@@ -53,6 +53,14 @@ class LinkedList:
             print(current_node.data)
             current_node = current_node.next
 
+    def lengthOfLL(self):
+        current=self.head 
+        count=0
+        while current is not None:
+            count+=1 
+            current=current.next 
+        print("Length is: ",count)
+
 LL = LinkedList()
 LL.insertInBegining(1)
 LL.insertInBegining(2)
@@ -60,4 +68,5 @@ LL.insertInBegining(3)
 LL.insertAtEnd(4)
 LL.insertAtPosition(9,2)
 print("Nodes in the list:")
+LL.lengthOfLL()
 LL.printList()
